@@ -40,7 +40,10 @@ Project Structure
 -----------------
 The project files and folders are organized as follows:
 
-    person_search_project/
+# Project Structure: Person Search Project
+
+```plaintext
+person_search_project/
 │
 ├── main.py                 # Entry point of the application
 ├── modules/
@@ -55,8 +58,7 @@ The project files and folders are organized as follows:
 │   ├── person.csv          # Input CSV file containing metadata
 │   └── samples/            # Folder containing sample images
 └── requirements.txt        # List of required libraries
-
-
+```
 Usage
 -----
 1. **Prepare the Data**:
