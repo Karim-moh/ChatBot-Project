@@ -40,17 +40,22 @@ Project Structure
 -----------------
 The project files and folders are organized as follows:
 
-    ├── code/
-    │   ├── main.py                # Main script for running the application
-    │   ├── models.py              # Model initialization and preprocessing functions
-    │   ├── feature_extraction.py  # Feature extraction logic
-    │   ├── matching.py            # Matching functions for text and image features
-    │   └── utils.py               # Utility functions (e.g., filtering and image loading)
-    ├── samples/                   # Folder containing sample images
-    ├── person.csv                 # CSV file with metadata (e.g., ID, race, gender)
-    ├── README.txt                 # Project overview and setup instructions
-    ├── requirements.txt           # Python package dependencies
-    └── documentation.docs         # Full project documentation
+    person_search_project/
+│
+├── main.py                 # Entry point of the application
+├── modules/
+│   ├── __init__.py         # Makes the `modules` directory a Python package
+│   ├── feature_extraction.py  # Functions for feature extraction
+│   ├── preprocessing.py    # Text cleaning, mapping, and preprocessing
+│   ├── matching.py         # Matching logic for text and image features
+│   ├── display.py          # Functions for displaying images and results
+│   ├── nlp_models.py       # Initialization of NLP models
+│   └── image_processing.py # Image loading and preprocessing
+├── data/
+│   ├── person.csv          # Input CSV file containing metadata
+│   └── samples/            # Folder containing sample images
+└── requirements.txt        # List of required libraries
+
 
 Usage
 -----
